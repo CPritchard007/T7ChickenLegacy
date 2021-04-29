@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar } from 'react-native';
+import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar, ScrollView } from 'react-native';
 
 const TileButton = ({title, img, location, disabled, fullwidth}) => {
     const screen = Dimensions.get('screen');
@@ -63,28 +63,35 @@ export const HomePage = (navigation) => {
         },
         h2: {
             color: 'white',
-            fontSize: 32,
+            fontSize: 35,
             fontWeight: 'bold',
+            textTransform: 'uppercase',
+            fontFamily: 'Faustina',
+            top: -10
         },
         h3: {
             color: 'white',
             fontSize: 24,
-            fontWeight: 'bold',            
+            fontWeight: 'bold',
+            paddingLeft: 20,
+
         }
     });
 
     return (
         <SafeAreaView style={style.mainContainer}>
             <StatusBar barStyle='light-content'/>
+            
             <View style={{padding: 20}}>
                 <Text style={style.h3}>Welcome to</Text>
-                <Text style={style.h2}>T7Chicken Legacy</Text>
+                <Text style={style.h2}><Text style={{color: "red", fontSize: 45}}>T7 </Text>Chicken Legacy</Text>
             </View>
-            <TileButton title="Character Select" img={require("../assets/images/character-select-background.png")}  fullwidth/>
-            <TileButton title="Sponsors" img={require('../assets/images/sponsors.jpg')}/>
-            <TileButton title="Support Us" img={require('../assets/images/support-us.jpg')}/>
-            <TileButton title="About The Team" img={require('../assets/images/about-the-team.png')} />
-            <TileButton title="Settings"  />
+            <TileButton title="Character Select" img={require("../assets/images/mainMenu/character-select-background.png")}  fullwidth/>
+            <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')}/>
+            <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')}/>
+            <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} />
+            <TileButton title="Settings"/>
+            
         
         </SafeAreaView>
     );
