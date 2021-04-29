@@ -19,6 +19,7 @@ import {
   View,
 } from 'react-native';
 import { HomePage } from './HomePage';
+import { CharSelect } from './CharacterSelect';
 
 
 
@@ -29,7 +30,8 @@ const App = () => {
     return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Home" component={HomePage} options={{headerShown: false,headerStyle: {backgroundColor: "#242424"}, headerTintColor: "#fff"}}/>
+        <Stack.Screen name="Menu" component={HomePage} options={{headerShown: false,headerStyle: {backgroundColor: "#242424"}, headerTintColor: "#fff"}}/>
+        <Stack.Screen name="CharSelect" component={CharSelect} options={{headerStyle: {backgroundColor: "#242424"}, headerTintColor: "#fff"}}/>
       </Stack.Navigator>
     </NavigationContainer>
     );
