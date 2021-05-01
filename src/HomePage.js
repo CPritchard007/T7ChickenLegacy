@@ -1,40 +1,16 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar, ScrollView } from 'react-native';
 import FontistoIcon from 'react-native-vector-icons/Fontisto'
+import { globalTheme } from '../assets/themes/defaultTheme';
 
 
 export const HomePage = ({navigation}) => {
-    const style = StyleSheet.create({
-        mainContainer: {
-            flex: 1,
-            backgroundColor: '#121212',
-            flexWrap: 'wrap',
-            flexDirection: 'row'
-        },
-        h2: {
-            color: 'white',
-            fontSize: 35,
-            fontWeight: 'bold',
-            textTransform: 'uppercase',
-            fontFamily: 'Faustina',
-            top: -10
-        },
-        h3: {
-            color: 'white',
-            fontSize: 24,
-            fontWeight: 'bold',
-            paddingLeft: 20,
-
-        }
-    });
-
-
 
     const TileButton = ({ title, img, location, disabled, fullwidth}) => {
         const screen = Dimensions.get('screen');
         const numberOfTilesPerWidth = screen.width < 400 ? 2 : screen.width / 200;
-        const marginSeperators = 0;
-        const tileWidth = screen.width / numberOfTilesPerWidth - (marginSeperators * 2);
+        const marginSeperators = 3;
+        const tileWidth = screen.width / numberOfTilesPerWidth;
         const importantFullWidth = screen.width - marginSeperators;
         
         const style = StyleSheet.create({
@@ -51,15 +27,11 @@ export const HomePage = ({navigation}) => {
                     margin: marginSeperators,
                     flex: 1,
                     position: 'relative',
-                    margin: 3,
                     opacity: .5,
                     borderRadius: 5,
                 },
-                
                 textStyle: {
-                    position: 'absolute',
-                    bottom: 0,
-                    left : 0,
+                    position: 'absolute', bottom: 0, left : 0,
                     width: '100%',
                     fontSize: 18,
                     fontWeight: 'bold',
@@ -67,9 +39,8 @@ export const HomePage = ({navigation}) => {
                     backgroundColor: "#000000dd",
                     padding: 5
                 }
-            
         });
-        function disableIcon (){
+        function disableIcon(){
             if (!disabled) return
             return <FontistoIcon name="locked" size={30} color="white" style={{position: 'absolute', top:10, left: 10}}/>   
         }
@@ -85,20 +56,18 @@ export const HomePage = ({navigation}) => {
     }
 
     return (
-        <SafeAreaView style={style.mainContainer}>
+        <SafeAreaView style={[globalTheme.mainContainer, globalTheme.horizontalWrap]}>
             <StatusBar barStyle='light-content'/>
             
             <View style={{padding: 20}}>
-                <Text style={style.h3}>Welcome to</Text>
-                <Text style={style.h2}><Text style={{color: "red", fontSize: 45}}>T7 </Text>Chicken Legacy</Text>
+                <Text style={globalTheme.h3}>Welcome to</Text>
+                <Text style={globalTheme.h2}><Text style={{color: "red", fontSize: 45}}>T7 </Text>Chicken Legacy</Text>
             </View>
             <TileButton title="Character Select" img={require("../assets/images/mainMenu/character-select-background.png")} location='CharSelect' fullwidth/>
             <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')} disabled/>
             <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')} disabled/>
             <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} disabled/>
             <TileButton title="Settings" disabled/>
-            
-        
         </SafeAreaView>
     );
 

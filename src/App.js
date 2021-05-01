@@ -20,6 +20,7 @@ import {
 } from 'react-native';
 import { HomePage } from './HomePage';
 import { CharSelect } from './CharacterSelect';
+import { globalHeaderOptions } from '../assets/themes/defaultTheme';
 
 
 
@@ -30,8 +31,8 @@ const App = () => {
     return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Menu" component={HomePage} options={{headerShown: false,headerStyle: {backgroundColor: "#242424"}, headerTintColor: "#fff"}}/>
-        <Stack.Screen name="CharSelect" component={CharSelect} options={{headerStyle: {backgroundColor: "#242424"}, headerTintColor: "#fff"}}/>
+        <Stack.Screen name="Menu" component={HomePage} options={globalHeaderOptions, {headerShown: false}}/>
+        <Stack.Screen name="CharSelect" component={CharSelect} options={globalHeaderOptions}/>
       </Stack.Navigator>
     </NavigationContainer>
     );
