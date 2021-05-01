@@ -36,9 +36,12 @@ export const globalTheme = StyleSheet.create({
     }
 });
 
-export const globalHeaderOptions = {
-    headerStyle: {
-        backgroundColor: HEADER_COLOR
-    },
-     headerTintColor: TEXT_COLOR
+export const globalHeaderOptions = function(title){
+    return { 
+        headerTitle: title,
+        headerStyle: {
+            backgroundColor: HEADER_COLOR
+        },
+        headerTintColor: TEXT_COLOR
     }
+}

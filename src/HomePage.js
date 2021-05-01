@@ -1,10 +1,22 @@
 import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar, ScrollView } from 'react-native';
-import FontistoIcon from 'react-native-vector-icons/Fontisto'
+import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar, ScrollView, Platform } from 'react-native';
+import FontistoIcon from 'react-native-vector-icons/Fontisto';
+import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
 import { globalTheme } from '../assets/themes/defaultTheme';
 
 
 export const HomePage = ({navigation}) => {
+
+    React.useLayoutEffect( () => {
+        navigation.setOptions({
+            headerRight: () => {
+                if (Platform.OS === "ios")
+                    return <FontFiveIcon name="ellipsis-v" size={18} style={{padding:15}} color="#fff" onPress={() => alert("Hello World")}/>
+                else 
+                    return <FontistoIcon name="player-settings" size={18} style={{padding:15}} color="#fff" onPress={() => alert("Hello World")}/>
+            }
+        })
+    });
 
     const TileButton = ({ title, img, location, disabled, fullwidth}) => {
         const screen = Dimensions.get('screen');
