@@ -3,7 +3,6 @@ import { SafeAreaView, ScrollView, View, Text, Dimensions, TouchableOpacity, Sty
 import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
 import FontIcon from 'react-native-vector-icons/FontAwesome';
 import { globalTheme } from '../assets/themes/defaultTheme';
-import { ReactNativeTooltipMenu as TooltipMenu } from 'react-native-tooltip-menu'
 
 
 
