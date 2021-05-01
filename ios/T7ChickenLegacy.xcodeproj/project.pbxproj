@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		000EAF40003546CF985F93AD /* Faustina.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Faustina.ttf; path = ../assets/fonts/Faustina.ttf; sourceTree = "<group>"; };
+		000EAF40003546CF985F93AD /* Faustina.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Faustina.ttf; path = ../assets/fonts/Faustina.ttf; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* T7ChickenLegacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T7ChickenLegacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* T7ChickenLegacyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = T7ChickenLegacyTests.m; sourceTree = "<group>"; };
@@ -494,6 +494,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4Z35EM6XS;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = T7ChickenLegacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -520,6 +521,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L4Z35EM6XS;
 				INFOPLIST_FILE = T7ChickenLegacy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
