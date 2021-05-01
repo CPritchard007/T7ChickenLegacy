@@ -4,11 +4,11 @@ import FontistoIcon from 'react-native-vector-icons/Fontisto';
 import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
 import { globalTheme } from '../assets/themes/defaultTheme';
 
-
 export const HomePage = ({navigation}) => {
 
     React.useLayoutEffect( () => {
         navigation.setOptions({
+            headerTitle: " ",
             headerRight: () => {
                 if (Platform.OS === "ios")
                     return <FontFiveIcon name="ellipsis-v" size={18} style={{padding:15}} color="#fff" onPress={() => alert("Hello World")}/>
@@ -85,5 +85,4 @@ export const HomePage = ({navigation}) => {
             </ScrollView>
         </SafeAreaView>
     );
-
 }

@@ -25,17 +25,13 @@ import { globalHeaderOptions } from '../assets/themes/defaultTheme';
 
 
 const App = () => {
-
-
-
-
     const Stack = createStackNavigator();
     
     return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Menu" component={HomePage} options={globalHeaderOptions("")}/>
-        <Stack.Screen name="CharSelect" component={CharSelect} options={globalHeaderOptions()}/>
+        <Stack.Screen name="Menu" component={HomePage} options={globalHeaderOptions}/>
+        <Stack.Screen name="CharSelect" component={CharSelect} options={globalHeaderOptions}/>
       </Stack.Navigator>
     </NavigationContainer>
     );
