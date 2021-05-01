@@ -11,9 +11,9 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		13E28B5040A284F93538159C /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BBED53EF3A299D09FC6FA1C /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */; };
-		32AE5BA80A944073DA8BF0D3 /* libPods-T7ChickenLegacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CF9E97EC9FCA87F8556A85A1 /* libPods-T7ChickenLegacy.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		B5FF7EF409DE930A4E64822F /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 914E6E9340EA113077D0D5F2 /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */; };
+		D93F301583A210FDC8BB9E72 /* libPods-T7ChickenLegacy.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 12B36072F27215F3FE829CA6 /* libPods-T7ChickenLegacy.a */; };
 		F420C7F6B81E4ADAACEBC424 /* Faustina.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 000EAF40003546CF985F93AD /* Faustina.ttf */; };
 /* End PBXBuildFile section */
 
@@ -28,11 +28,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		000EAF40003546CF985F93AD /* Faustina.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Faustina.ttf; path = ../assets/fonts/Faustina.ttf; sourceTree = "<group>"; };
 		00E356EE1AD99517003FC87E /* T7ChickenLegacyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T7ChickenLegacyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* T7ChickenLegacyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = T7ChickenLegacyTests.m; sourceTree = "<group>"; };
 		05DBC54B41CA493983091F56 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		0B348581F5B818B61C8E30B6 /* Pods-T7ChickenLegacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy.debug.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy.debug.xcconfig"; sourceTree = "<group>"; };
 		0C0A09B9EDC54F9784B4370D /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		12B36072F27215F3FE829CA6 /* libPods-T7ChickenLegacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T7ChickenLegacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* T7ChickenLegacy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T7ChickenLegacy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = T7ChickenLegacy/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = T7ChickenLegacy/AppDelegate.m; sourceTree = "<group>"; };
@@ -40,29 +43,26 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = T7ChickenLegacy/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = T7ChickenLegacy/main.m; sourceTree = "<group>"; };
 		19DC1EB6F7634EE9BC0F988F /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
-		24E843457789DDBE8C691D05 /* Pods-T7ChickenLegacy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy.debug.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy.debug.xcconfig"; sourceTree = "<group>"; };
 		250A279697C940F3A2C3D308 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
 		26E2752EFC4443629E22F720 /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
 		2F315CF00E044220BDC4F6F3 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		32AA2760BA404E308CEFF2A4 /* Faustina-VariableFont_wght.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Faustina-VariableFont_wght.ttf"; path = "../assets/fonts/Faustina-VariableFont_wght.ttf"; sourceTree = "<group>"; };
-		4BBED53EF3A299D09FC6FA1C /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T7ChickenLegacy-T7ChickenLegacyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44FD9AD427BF75454F0A5273 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig"; sourceTree = "<group>"; };
 		5B8EEEC949C84977BC9190D6 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
 		5EAE7101C1A9400BA8015741 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; };
 		5F350A87025144029F5725F1 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
-		7037A6EE7E94C1B394ADD33F /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig"; sourceTree = "<group>"; };
-		800CC35DBFC9A314E0AE0CD9 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig"; sourceTree = "<group>"; };
 		806D8EEDDDA543C88C5A9D39 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = T7ChickenLegacy/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85C7B22CCEB44C05B724D2C7 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
 		8C3481F160E748A8A6435B0C /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		914E6E9340EA113077D0D5F2 /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T7ChickenLegacy-T7ChickenLegacyTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9CBDDA639FB15D152045F49B /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig"; sourceTree = "<group>"; };
 		AA378BCDE21B48F181ECF0AE /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		AE2F4CA24C2845D39B8B29B9 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
-		CF9E97EC9FCA87F8556A85A1 /* libPods-T7ChickenLegacy.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-T7ChickenLegacy.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D68FC37163F9F55A2C0071B6 /* Pods-T7ChickenLegacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy.release.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy.release.xcconfig"; sourceTree = "<group>"; };
+		C381E5242565A274D56BD147 /* Pods-T7ChickenLegacy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-T7ChickenLegacy.release.xcconfig"; path = "Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		F28EFD7AAA234FA69C0D879F /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
 		F671902F1E4F4F2ABB85B9E5 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
-		000EAF40003546CF985F93AD /* Faustina.ttf */ = {isa = PBXFileReference; name = "Faustina.ttf"; path = "../assets/fonts/Faustina.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13E28B5040A284F93538159C /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a in Frameworks */,
+				B5FF7EF409DE930A4E64822F /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				32AE5BA80A944073DA8BF0D3 /* libPods-T7ChickenLegacy.a in Frameworks */,
+				D93F301583A210FDC8BB9E72 /* libPods-T7ChickenLegacy.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
-				CF9E97EC9FCA87F8556A85A1 /* libPods-T7ChickenLegacy.a */,
-				4BBED53EF3A299D09FC6FA1C /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */,
+				12B36072F27215F3FE829CA6 /* libPods-T7ChickenLegacy.a */,
+				914E6E9340EA113077D0D5F2 /* libPods-T7ChickenLegacy-T7ChickenLegacyTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -153,10 +153,10 @@
 		6E6E3AEF45BE4B3705899F00 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				24E843457789DDBE8C691D05 /* Pods-T7ChickenLegacy.debug.xcconfig */,
-				D68FC37163F9F55A2C0071B6 /* Pods-T7ChickenLegacy.release.xcconfig */,
-				7037A6EE7E94C1B394ADD33F /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */,
-				800CC35DBFC9A314E0AE0CD9 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */,
+				0B348581F5B818B61C8E30B6 /* Pods-T7ChickenLegacy.debug.xcconfig */,
+				C381E5242565A274D56BD147 /* Pods-T7ChickenLegacy.release.xcconfig */,
+				9CBDDA639FB15D152045F49B /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */,
+				44FD9AD427BF75454F0A5273 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -200,12 +200,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "T7ChickenLegacyTests" */;
 			buildPhases = (
-				6309288A039BCC7A7BA4B654 /* [CP] Check Pods Manifest.lock */,
+				1F666BF17C594507A3C78C7D /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				3A9753480442D23D58CA5615 /* [CP] Embed Pods Frameworks */,
-				7F466C511D790E362FB5FEF2 /* [CP] Copy Pods Resources */,
+				87A29CA21E87703DB5BB71C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -221,14 +220,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "T7ChickenLegacy" */;
 			buildPhases = (
-				03FC8ABD611777E8473F75B1 /* [CP] Check Pods Manifest.lock */,
+				9CC7E23A85D26AEDED069A42 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				65F4AC2B7ADA4DF4F1F47BDF /* [CP] Embed Pods Frameworks */,
-				34AD9A5C168885B2E75C0DCE /* [CP] Copy Pods Resources */,
+				10D3B722A0FFD214C8C1B422 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -310,29 +308,7 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
-		03FC8ABD611777E8473F75B1 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-T7ChickenLegacy-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		34AD9A5C168885B2E75C0DCE /* [CP] Copy Pods Resources */ = {
+		10D3B722A0FFD214C8C1B422 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -349,24 +325,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3A9753480442D23D58CA5615 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6309288A039BCC7A7BA4B654 /* [CP] Check Pods Manifest.lock */ = {
+		1F666BF17C594507A3C78C7D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -388,24 +347,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		65F4AC2B7ADA4DF4F1F47BDF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy/Pods-T7ChickenLegacy-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7F466C511D790E362FB5FEF2 /* [CP] Copy Pods Resources */ = {
+		87A29CA21E87703DB5BB71C5 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -420,6 +362,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-T7ChickenLegacy-T7ChickenLegacyTests/Pods-T7ChickenLegacy-T7ChickenLegacyTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9CC7E23A85D26AEDED069A42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-T7ChickenLegacy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
@@ -474,7 +438,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7037A6EE7E94C1B394ADD33F /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */;
+			baseConfigurationReference = 9CBDDA639FB15D152045F49B /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -501,7 +465,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 800CC35DBFC9A314E0AE0CD9 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */;
+			baseConfigurationReference = 44FD9AD427BF75454F0A5273 /* Pods-T7ChickenLegacy-T7ChickenLegacyTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -525,7 +489,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 24E843457789DDBE8C691D05 /* Pods-T7ChickenLegacy.debug.xcconfig */;
+			baseConfigurationReference = 0B348581F5B818B61C8E30B6 /* Pods-T7ChickenLegacy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -551,7 +515,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D68FC37163F9F55A2C0071B6 /* Pods-T7ChickenLegacy.release.xcconfig */;
+			baseConfigurationReference = C381E5242565A274D56BD147 /* Pods-T7ChickenLegacy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;

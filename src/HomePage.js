@@ -56,18 +56,21 @@ export const HomePage = ({navigation}) => {
     }
 
     return (
-        <SafeAreaView style={[globalTheme.mainContainer, globalTheme.horizontalWrap]}>
+        <SafeAreaView style={globalTheme.mainContainer}>
             <StatusBar barStyle='light-content'/>
             
             <View style={{padding: 20}}>
                 <Text style={globalTheme.h3}>Welcome to</Text>
                 <Text style={globalTheme.h2}><Text style={{color: "red", fontSize: 45}}>T7 </Text>Chicken Legacy</Text>
             </View>
-            <TileButton title="Character Select" img={require("../assets/images/mainMenu/character-select-background.png")} location='CharSelect' fullwidth/>
-            <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')} disabled/>
-            <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')} disabled/>
-            <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} disabled/>
-            <TileButton title="Settings" disabled/>
+            <ScrollView bounces={false} overScrollMode={'never'}>
+                <View style={globalTheme.horizontalWrap}>
+                    <TileButton title="Character Select" img={require("../assets/images/mainMenu/character-select-background.png")} location='CharSelect' fullwidth/>
+                    <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')} disabled/>
+                    <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')} disabled/>
+                    <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} disabled/>
+                </View>
+            </ScrollView>
         </SafeAreaView>
     );
 
