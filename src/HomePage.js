@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, Dimensions, Image, ImageBackground, SafeAreaView, StatusBar, ScrollView } from 'react-native';
-
+import FontistoIcon from 'react-native-vector-icons/Fontisto'
 
 
 export const HomePage = ({navigation}) => {
@@ -9,7 +9,7 @@ export const HomePage = ({navigation}) => {
             flex: 1,
             backgroundColor: '#121212',
             flexWrap: 'wrap',
-            flexDirection: 'row'  
+            flexDirection: 'row'
         },
         h2: {
             color: 'white',
@@ -69,11 +69,17 @@ export const HomePage = ({navigation}) => {
                 }
             
         });
+        function disableIcon (){
+            if (!disabled) return
+            return <FontistoIcon name="locked" size={30} color="white" style={{position: 'absolute', top:10, left: 10}}/>   
+        }
+
         return (
-            <TouchableOpacity style={style.tileButton} onPress={() => navigation.navigate("CharSelect")}>
+            <TouchableOpacity disabled={disabled} style={style.tileButton} onPress={() => navigation.navigate(location)}>
                 <ImageBackground source={img} style={style.imageContainer} imageStyle={style.imageStyle}>
-                <Text style={style.textStyle}>{title}</Text>
+                    <Text style={style.textStyle}>{title}</Text>
                 </ImageBackground>
+                {disableIcon()}
             </TouchableOpacity>
         )
     }
@@ -87,10 +93,10 @@ export const HomePage = ({navigation}) => {
                 <Text style={style.h2}><Text style={{color: "red", fontSize: 45}}>T7 </Text>Chicken Legacy</Text>
             </View>
             <TileButton title="Character Select" img={require("../assets/images/mainMenu/character-select-background.png")} location='CharSelect' fullwidth/>
-            <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')}/>
-            <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')}/>
-            <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} />
-            <TileButton title="Settings"/>
+            <TileButton title="Sponsors" img={require('../assets/images/mainMenu/sponsors.jpg')} disabled/>
+            <TileButton title="Support Us" img={require('../assets/images/mainMenu/support-us.jpg')} disabled/>
+            <TileButton title="About The Team" img={require('../assets/images/mainMenu/about-the-team.png')} disabled/>
+            <TileButton title="Settings" disabled/>
             
         
         </SafeAreaView>
