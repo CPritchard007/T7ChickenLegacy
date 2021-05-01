@@ -74,7 +74,7 @@ export const CharSelect = ({navigation}) => {
             }
         });
 
-        favouritedIcon = (isFavourited) => isFavourited? <FontIcon style={style.starIcon} color="white" size={28} name="star"/> : <FontIcon color="white" size={28} style={style.starIcon} name="star-o"/>
+        favouritedIcon = (isFavourited) => isFavourited? <FontIcon style={style.starIcon} color="white" size={28} name="star"/> : null
 
         return (
             <TouchableOpacity style={style.tiles}>
