@@ -5,10 +5,10 @@ This is a new version of the original **T7 Chicken Pro** made by github user __@
 ### Home Page
 Original | T7ChickenLegacy
 :-------------------------:|:-------------------------:
-![img](./assets/READ_ME_IMAGES/homepage_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/homepage_updated.png)
+![img](./assets/READ_ME_IMAGES/homepage_original_display.PNG)  |  ![img](./assets/READ_ME_IMAGES/homepage_updated_display.png)
 
 ### Character Select
 Original | T7ChickenLegacy
 :-------------------------:|:-------------------------:
-![img](./assets/READ_ME_IMAGES/characterselect_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/characterselect_updated.png)
+![img](./assets/READ_ME_IMAGES/characterselect_original_display.PNG)  |  ![img](./assets/READ_ME_IMAGES/characterselect_updated_display.png)
 
