@@ -4,6 +4,13 @@ import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
 import FontIcon from 'react-native-vector-icons/FontAwesome';
 import { globalTheme } from '../assets/themes/defaultTheme';
 
+/**
+ * @name CharacterSelect
+ * CharacterSelect is just as the name should sugest, this will allow the user to select
+ *   A fighter from the list and learn anything and everything they need to know about them.
+ * 
+ * @author Curtis Pritchard
+ */
 
 
 const TempData = [
@@ -29,9 +36,9 @@ const TempData = [
     }
 ];
 
-
-
 export const CharSelect = ({navigation}) => {
+    //top navigation will contain an elipse icon or a gear icon (dependent on the device type), 
+    // as well as customize the header title (Character Select)
     React.useLayoutEffect( () => {
         navigation.setOptions({
             title: "Character Select",
@@ -42,8 +49,10 @@ export const CharSelect = ({navigation}) => {
     });
 
     const TileItem = ({title, location, disabled, image, favourited}) => {
+        
+        //calculate a good ratio for the application (poorly). A better verison will be done later on in time
         const screen = Dimensions.get('screen');
-        const numberOfTilesPerLine = 3;
+        const numberOfTilesPerLine = screen.width < 400 ? 3: Math.ceil(screen.width / 200);
         const marginSpacing = 3;
         const tileWidth = screen.width / numberOfTilesPerLine - (marginSpacing * 2);
         
@@ -73,7 +82,8 @@ export const CharSelect = ({navigation}) => {
                 padding: 5
             }
         });
-
+        // using this will allow to asure that only favourited characters have a star.
+        // this will allow the screen to show more of the art, without too much clutter.
         favouritedIcon = (isFavourited) => isFavourited? <FontIcon style={style.starIcon} color="white" size={28} name="star"/> : null
 
         return (
@@ -86,8 +96,7 @@ export const CharSelect = ({navigation}) => {
         );
     }
 
-    const itemList = [];
-
+    //with all the character data, sort them by favourited, then by alphabetical
     const sortedData = TempData.sort((a,b) => {
         if (a.favourited && b.favourited) {
             if (a.label > b.label) {
@@ -108,16 +117,19 @@ export const CharSelect = ({navigation}) => {
         }
         return 0
     })
-
+    
+    //due to the fact that I need to create a list of tiles for flexbox, I am passing all the data into an itemList array as TIleItems
+    const itemList = [];
     sortedData.forEach( item => { 
         itemList.push(<TileItem title={item.label} image={item.image} location={null} favourited={item.favourited}/>)
     });
     
+    // TileItems will be placed one after the other from the array below
     return(
         <SafeAreaView style={globalTheme.mainContainer}>
             <ScrollView>
                 <View style={globalTheme.horizontalWrap}>
-                    {itemList}
+                    {itemList}  
                 </View>
             </ScrollView>
         </SafeAreaView>

@@ -4,8 +4,18 @@ import FontistoIcon from 'react-native-vector-icons/Fontisto';
 import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
 import { globalTheme } from '../assets/themes/defaultTheme';
 
-export const HomePage = ({navigation}) => {
+/**
+ * @name HomePage
+ * Screen 1, this page is what the user will see once they first launch.
+ *   More information will be added in the future
+ * 
+ * @author Curtis Pritchard
+ */
 
+
+export const HomePage = ({navigation}) => {
+    //top navigation will contain an elipse icon or a gear icon (dependent on the device type), 
+    // as well as remove the header title
     React.useLayoutEffect( () => {
         navigation.setOptions({
             headerTitle: " ",
@@ -19,16 +29,21 @@ export const HomePage = ({navigation}) => {
     });
 
     const TileButton = ({ title, img, location, disabled, fullwidth}) => {
+    
+        //calculate a good ratio for the application (poorly). A better verison will be done later on in time
         const screen = Dimensions.get('screen');
-        const numberOfTilesPerWidth = screen.width < 400 ? 2 : screen.width / 200;
+        const numberOfTilesPerWidth = 2
         const marginSeperators = 3;
         const tileWidth = screen.width / numberOfTilesPerWidth;
         const importantFullWidth = screen.width - marginSeperators;
+
+        // allow the ipad users to not deal with having to scroll on one huge screen
+        const tileHeight = screen.width < 400 ? tileWidth  : tileWidth / 1.3
         
         const style = StyleSheet.create({
             tileButton: {
                 width: fullwidth ? importantFullWidth : tileWidth,
-                height: tileWidth,  
+                height: tileHeight,  
             },
             imageStyle: {
                 borderRadius: 5,
@@ -52,6 +67,8 @@ export const HomePage = ({navigation}) => {
                     padding: 5
                 }
         });
+        
+        //allow me to decide if the icon should render
         function disableIcon(){
             if (!disabled) return
             return <FontistoIcon name="locked" size={30} color="white" style={{position: 'absolute', top:10, left: 10}}/>   
