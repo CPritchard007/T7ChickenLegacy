@@ -7,7 +7,7 @@ Original | T7ChickenPlus
 :-------------------------:|:-------------------------:
 ![img](./assets/READ_ME_IMAGES/homepage_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/homepage_updated.png)
 
-###Character Select
+### Character Select
 Original | T7ChickenPlus
 :-------------------------:|:-------------------------:
 ![img](./assets/READ_ME_IMAGES/characterselect_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/characterselect_updated.png)
