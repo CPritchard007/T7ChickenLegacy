@@ -120,8 +120,8 @@ export const CharSelect = ({navigation}) => {
     
     //due to the fact that I need to create a list of tiles for flexbox, I am passing all the data into an itemList array as TIleItems
     const itemList = [];
-    sortedData.forEach( item => { 
-        itemList.push(<TileItem title={item.label} image={item.image} location={null} favourited={item.favourited}/>)
+    sortedData.forEach( (item, index) => { 
+        itemList.push(<TileItem key={index} title={item.label} image={item.image} id={index} location={null} favourited={item.favourited}/>)
     });
     
     // TileItems will be placed one after the other from the array below
