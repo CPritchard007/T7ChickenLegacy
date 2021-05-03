@@ -21,9 +21,9 @@ export const HomePage = ({navigation}) => {
             headerTitle: " ",
             headerRight: () => {
                 if (Platform.OS === "ios")
-                    return <FontFiveIcon name="ellipsis-v" size={18} style={{padding:15}} color="#fff" onPress={() => alert("Hello World")}/>
+                    return <FontFiveIcon name="ellipsis-v" size={18} style={{padding:15}} color="#fff" onPress={() => navigation.navigate('Settings')}/>
                 else 
-                    return <FontistoIcon name="player-settings" size={18} style={{padding:15}} color="#fff" onPress={() => alert("Hello World")}/>
+                    return <FontistoIcon name="player-settings" size={18} style={{padding:15}} color="#fff" onPress={() => navigation.navigate('Settings')}/>
             }
         })
     });
