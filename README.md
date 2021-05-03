@@ -11,10 +11,10 @@ IOS &nbsp; &nbsp; &nbsp; 🟢 |
 ###Home Page
 Original | T7ChickenPlus
 :-------------------------:|:-------------------------:
-![img](./assets/READ_ME_IMAGES/homepage_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/homepage_updated.PNG)
+![img](./assets/READ_ME_IMAGES/homepage_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/homepage_updated.png)
 
 ###Character Select
 Original | T7ChickenPlus
 :-------------------------:|:-------------------------:
-![img](./assets/READ_ME_IMAGES/characterselect_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/characterselect_updated.PNG)
+![img](./assets/READ_ME_IMAGES/characterselect_original.PNG)  |  ![img](./assets/READ_ME_IMAGES/characterselect_updated.png)
 
