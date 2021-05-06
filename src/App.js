@@ -5,6 +5,7 @@ import { HomePage } from './HomePage';
 import { CharSelect } from './CharacterSelect';
 import { SettingsPage } from './SettingsPage';
 import { globalHeaderOptions } from '../assets/themes/defaultTheme';
+import { CharacterSpotlight } from './CharacterSpotlight';
 
 
 /**
@@ -25,6 +26,7 @@ const App = () => {
         <Stack.Screen name="Menu" component={HomePage} options={globalHeaderOptions}/>
         <Stack.Screen name="CharSelect" component={CharSelect} options={globalHeaderOptions}/>
         <Stack.Screen name="Settings" component={SettingsPage} options={globalHeaderOptions}/>
+        <Stack.Screen name="CharacterSpotlight" component={CharacterSpotlight} options={globalHeaderOptions}/>
       </Stack.Navigator>
     </NavigationContainer>
   );

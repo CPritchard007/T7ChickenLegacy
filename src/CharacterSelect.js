@@ -1,8 +1,8 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, View, Text, Dimensions, TouchableOpacity, StyleSheet, ImageBackground } from 'react-native';
 import FontFiveIcon from 'react-native-vector-icons/FontAwesome5';
-import FontIcon from 'react-native-vector-icons/FontAwesome';
 import { globalTheme } from '../assets/themes/defaultTheme';
+import { CharacterTileItem } from './components/TileButton';
 
 /**
  * @name CharacterSelect
@@ -48,53 +48,6 @@ export const CharSelect = ({navigation}) => {
         })
     });
 
-    const TileItem = ({title, location, disabled, image, favourited}) => {
-        
-        //calculate a good ratio for the application (poorly). A better verison will be done later on in time
-        const screen = Dimensions.get('screen');
-        const numberOfTilesPerLine = screen.width < 400 ? 3: Math.ceil(screen.width / 200);
-        const marginSpacing = 3;
-        const tileWidth = screen.width / numberOfTilesPerLine - (marginSpacing * 2);
-        
-        const style = StyleSheet.create({
-            tiles: {
-                width: tileWidth,
-                height: tileWidth * 1.3,
-                backgroundColor: "#232323",
-                margin: marginSpacing
-            },
-            textFit: {
-                width: '100%',
-                color: 'white',
-                fontSize: 16,
-                fontWeight: 'bold',
-                padding: 5,
-                position: 'absolute', bottom: 0, left: 0,
-                backgroundColor: '#121212ee',
-                textAlign: 'center'
-            },
-            imageContainer: {
-                position: 'relative',
-                width: '100%',
-                flex: 1
-            },
-            starIcon: {
-                padding: 5
-            }
-        });
-        // using this will allow to asure that only favourited characters have a star.
-        // this will allow the screen to show more of the art, without too much clutter.
-        favouritedIcon = (isFavourited) => isFavourited? <FontIcon style={style.starIcon} color="white" size={28} name="star"/> : null
-
-        return (
-            <TouchableOpacity style={style.tiles}>
-                <ImageBackground source={image} imageStyle={{resizeMode: 'cover'}} style={style.imageContainer}>
-                    {favouritedIcon(favourited)}
-                </ImageBackground>
-                <Text numberOfLines={2} style={style.textFit}>{title}</Text>
-            </TouchableOpacity>
-        );
-    }
 
     //with all the character data, sort them by favourited, then by alphabetical
     const sortedData = TempData.sort((a,b) => {
@@ -121,7 +74,7 @@ export const CharSelect = ({navigation}) => {
     //due to the fact that I need to create a list of tiles for flexbox, I am passing all the data into an itemList array as TIleItems
     const itemList = [];
     sortedData.forEach( (item, index) => { 
-        itemList.push(<TileItem key={index} title={item.label} image={item.image} id={index} location={null} favourited={item.favourited}/>)
+        itemList.push(<CharacterTileItem key={index} title={item.label} image={item.image} id={index} location={'CharacterSpotlight'} favourited={item.favourited}/>)
     });
     
     // TileItems will be placed one after the other from the array below
